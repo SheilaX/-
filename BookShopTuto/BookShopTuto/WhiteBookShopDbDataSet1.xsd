@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="WhiteBookShopDbDataSet1" targetNamespace="http://tempuri.org/WhiteBookShopDbDataSet1.xsd" xmlns:mstns="http://tempuri.org/WhiteBookShopDbDataSet1.xsd" xmlns="http://tempuri.org/WhiteBookShopDbDataSet1.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="WhiteBookShopDbConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="WhiteBookShopDbConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.BookShopTuto.Properties.Settings.GlobalReference.Default.WhiteBookShopDbConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="BookTb1TableAdapter" GeneratorDataComponentClassName="BookTb1TableAdapter" Name="BookTb1" UserDataComponentName="BookTb1TableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="WhiteBookShopDbConnectionString (Settings)" DbObjectName="dbo.BookTb1" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT BCat FROM dbo.BookTb1</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="BCat" DataSetColumn="BCat" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="WhiteBookShopDbDataSet1" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_UserDSName="WhiteBookShopDbDataSet1" msprop:Generator_DataSetName="WhiteBookShopDbDataSet1">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="BookTb1" msprop:Generator_RowEvHandlerName="BookTb1RowChangeEventHandler" msprop:Generator_RowDeletedName="BookTb1RowDeleted" msprop:Generator_RowDeletingName="BookTb1RowDeleting" msprop:Generator_RowEvArgName="BookTb1RowChangeEvent" msprop:Generator_TablePropName="BookTb1" msprop:Generator_RowChangedName="BookTb1RowChanged" msprop:Generator_RowChangingName="BookTb1RowChanging" msprop:Generator_TableClassName="BookTb1DataTable" msprop:Generator_RowClassName="BookTb1Row" msprop:Generator_TableVarName="tableBookTb1" msprop:Generator_UserTableName="BookTb1">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="BCat" msprop:Generator_ColumnPropNameInRow="BCat" msprop:Generator_ColumnPropNameInTable="BCatColumn" msprop:Generator_ColumnVarNameInTable="columnBCat" msprop:Generator_UserColumnName="BCat">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
